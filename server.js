@@ -34,6 +34,8 @@ app.use(
       "https://mern-e-commerce-sigma.vercel.app",
       "https://ast-website-git-master-adaeze-ugwumbas-projects.vercel.app/",
       "https://ast-website-dp74mv0gg-adaeze-ugwumbas-projects.vercel.app/",
+      "https://front-m-beta.vercel.app/",
+      "https://ast-tau.vercel.app/",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
