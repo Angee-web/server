@@ -26,7 +26,12 @@ const PORT = process.env.PORT || 5000;
 // Middleware setup
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "https://front-m-beta.vercel.app",
+      "https://front-m-git-main-adaeze-ugwumbas-projects.vercel.app",
+      "https://front-8f922cb59-adaeze-ugwumbas-projects.vercel.app",
+      "https://front-lah0gmzt8-adaeze-ugwumbas-projects.vercel.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
       "Content-Type",
