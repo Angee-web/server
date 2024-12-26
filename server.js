@@ -26,10 +26,15 @@ const PORT = process.env.PORT || 5000;
 // Middleware setup
 app.use(
   cors({
-    origin: ["https://mernserver-34vf.onrender.com",
-      'https://mern-e-commerce-astt-h0wwx1i5i-daniel-iyiolas-projects.vercel.app',
+    origin: [
+      "https://mernserver-34vf.onrender.com",
+      "https://mern-e-commerce-astt-h0wwx1i5i-daniel-iyiolas-projects.vercel.app",
       "mern-e-commerce-astt-git-master-daniel-iyiolas-projects.vercel.app",
-      "https://mern-e-commerce-astt.vercel.app",'https://mern-e-commerce-sigma.vercel.app',],
+      "https://mern-e-commerce-astt.vercel.app",
+      "https://mern-e-commerce-sigma.vercel.app",
+      "https://ast-website-git-master-adaeze-ugwumbas-projects.vercel.app/",
+      "https://ast-website-dp74mv0gg-adaeze-ugwumbas-projects.vercel.app/",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
       "Content-Type",
