@@ -31,6 +31,7 @@ app.use(
       "https://front-m-git-main-adaeze-ugwumbas-projects.vercel.app",
       "https://front-8f922cb59-adaeze-ugwumbas-projects.vercel.app",
       "https://front-lah0gmzt8-adaeze-ugwumbas-projects.vercel.app",
+      "https://front-r1kceqf6u-adaeze-ugwumbas-projects.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
