@@ -12,6 +12,23 @@ dotenv.config();
 // Temporary storage for OTPs
 const otpStore = {};
 
+// Route to check authentication
+export const checkAuth = async (req, res) => {
+  try {
+    const { id, email, role, userName } = req.user;
+    res.status(200).json({
+      success: true,
+      message: "Authenticated",
+      user: { id, email, role, userName },
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
 
 //The register function is used to create a new user in the database. It uses the User model to create a new user and save it to the database. The password is hashed using bcrypt before saving it to the database. The function returns a success message if the user is created successfully.
 
